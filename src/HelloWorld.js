@@ -1,10 +1,11 @@
 import React from 'react';
 import Hamburger from './Hamburger';
-import "./style.css";
-const HelloWorld = () => {
+
+
+function HelloWorld() {
   return (
     <>
-      <Hamburger classname="hamburger"/>
+      <Hamburger classname="hamburger" onClick={Toggle}/>
       <h3>Hello World</h3>
     </>
   );
