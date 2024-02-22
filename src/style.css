@@ -1,0 +1,91 @@
+html, body, * {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15pt;
+    margin: 0;
+    padding: 0;
+}
+
+.hamburger {
+    padding: 4px 0 0 4px;
+    display: flex;
+    margin: 0 0 0 0;
+    flex-direction: column;
+}
+
+.line {
+    width: 20px;
+    height: 4px;
+    margin: 4px auto 4px auto;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.hamburger div, .hamburger {
+    transition: all .5s;
+}
+
+.hamburger div:nth-child(2) {
+    width: 30px!important;
+}
+
+.hamburger div:last-child {
+    width: 20px!important;
+}
+
+.open {
+    background-color: black;
+}
+
+.open div {
+    background-color: ghostwhite;
+    transform-origin: left;
+}
+
+.open div:first-child {
+    width: 40px!important;
+    transform: rotate(45deg);
+}
+
+.open div:nth-child(2) {
+    background-color: #42445A00;
+}
+ 
+.open div:last-child {
+    width: 40px!important;
+    transform: rotate(315deg);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    margin: 0 40px 0 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav, nav ul, nav ul li {
+    margin: 0;
+    font-size: 34px;
+    background-color: navajowhite;
+    transition: all .5s;
+    padding: 20px 5px auto 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer h4 {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    bottom: 0;
+}
